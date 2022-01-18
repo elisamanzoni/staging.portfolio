@@ -405,5 +405,12 @@ a:hover{
   height: calc(90vw * 9 / 16);
 }
 
+.ME:hover:before{
+  content: "ME";
+  transition: 0.5s;
+  background-color: none;
+  color:black!important;
+}
+
 
 }
