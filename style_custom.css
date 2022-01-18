@@ -15,6 +15,7 @@ user-select: none; /* supported by Chrome and Opera */
   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
+
 :root {
   --main-color: rgb(0, 255, 0);
   --tablet-difference: 1.1vw;
@@ -309,6 +310,8 @@ a:hover{
   padding: 0px 100px;
 }
 
+
+
 /* TABLET ------------------------------------------------- */
 
 @media (max-width: 1000px) {
@@ -395,6 +398,11 @@ a:hover{
 
 .padding-row{
   padding: 0px 20px;
+}
+
+.video_works{
+  width: 90vw;
+  height: calc(90vw * 9 / 16);
 }
 
 
