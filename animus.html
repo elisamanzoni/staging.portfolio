@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link href="style_custom.css" rel="stylesheet">
+      <script src="p5.min.js"></script>
+      <script src="p5.sound.min.js"></script>
+      <script src="sketch.js"></script>
+    <title>Manzoni Elisa</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+
+  </head>
+  <body class="bg-black">
+
+    <!-- navbar -->
+    <div class="row navbar_size mx-0 pt-2 pb-2 text-white position-fixed w-100 bg-black padding-row" style="border-color:white!important; z-index:5">
+      <div class="col d-flex align-items-end">
+        <a class="ME text-white" href="index.html"></a>
+      </div>
+      <div class="col text-end fs-6c d-flex align-items-end justify-content-end ">
+        <a href="about.html" class=" mx-md-3 mx-2 hover_bg_green text-white">About</a>
+        <a href="works.html" class=" mx-md-3 mx-2 hover_bg_green  text-white">Works</a>
+        <a class=" mx-md-3 mx-2 hover_bg_green  text-white" id="contact">Contact</a>
+      </div>
+    </div>
+
+<!-- contact -->
+    <div id="contact_container" class="contact_container_sparito display_none">
+      <div class="exit" id="exit"></div>
+      <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
+      <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+      <a  class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+    </div>
+
+<!-- spazio da navbar -->
+    <div class="pt-5">
+    </div>
+
+    <div class="row text-white mt-5">
+      <div class="col-12 text-center">
+        <div class="fs-1c mt-lg-0 my-3">
+          Polimi app redesign + Animus </div>
+          <iframe class="video_works" src="https://www.youtube.com/embed/QzzEP6UQfQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="row text-white mt-5  padding-row">
+      <div class="col-md-6 col-12 px-3">
+        <div class="fs-3c mt-4" >
+          A new smart way <br>of managing university rooms </div>
+      </div>
+      <div class="col-md-3 col-6 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c">
+            My main role: </div>
+          <div  class="fs-6c  mt-2 fw-lighter opacity" >
+            UI / UX  designer<br>
+            User researcher
+          </div>
+      </div>
+      <div class="col-md-3 col-6 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c">
+            My secondary role: </div>
+          <div  class="fs-6c  mt-2 fw-lighter opacity" >
+            Prototype creator<br>
+            C++ programmer
+          </div>
+      </div>
+    </div>
+
+<!-- intro -->
+    <div class="row text-white mt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-2c mt-4" >
+          How to improve the everyday lives <br> of students at Politecnico di Milano? </div>
+      </div>
+      <div class="col-lg-3 col-12 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          The university where I studied, Politecnico di Milano, has an application that gives students the ability to manage and perform various functions. Unfortunately, the app is unintuitive and difficult to use. </div>
+      </div>
+      <div class="col-lg-3 col-12 px-md-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+
+      After analysing the current app and testing the students, we realised that students have great difficulty in finding suitable classrooms on a daily basis. For this reason we decided to analyse this problem as well and we are very satisfied with the result. </div>
+      </div>
+    </div>
+
+    <div class="row text-white mt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/animus.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+        <img src="images/animus2.png" class="works_img">
+      </div>
+    </div>
+
+
+<!-- 1 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          1. Expert evaluation </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          The first phase was the Expert Evaluation, which aimed to define the main usability issues related to the architecture or to the UI.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+           Using the Heuristic evaluation strategy, we found that the flows are intricate and follow a horizontal development, making the user feel lost while navigating the features.
+        </div>
+    </div>
+    </div>
+
+<!-- 2 -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          2. User testing </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          To confirm the Heuristic Evaluation, find new insights and understand user mental models, we decided to conduct a questionnaire and structured interviews.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-md-2 fs-6c fw-lighter">
+          For the test we have decided to use some tools that could give us some more insights, like the ECG and a custom developed software able to understand the user’s emotions through his facial micro-movements.
+        </div>
+    </div>
+    </div>
+
+<!-- img -->
+    <div class="row text-white mt-5 pt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/animus4.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
+        <img src="images/animus3.png" class="works_img">
+      </div>
+    </div>
+
+<!-- 3 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          3. Define the concept</div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          The redesign phase started with the concept definition according to the outcomes of the analysis and the requirements of the users.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+          We based our UX concept on three main pillars: <br>
+          <ol>
+          <li> Customization</li>
+          <li> Speed </li>
+          <li>  Hierarchy </li>
+          </ol>
+        </div>
+    </div>
+    </div>
+
+<!-- 4 -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          4. Define and test the app architecture </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          Through several preliminary tests (Card sorting and Tree testing) we have defined our App Architecture, so we could realize a wireframe that we have improved thanks to other tests on users.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-md-2 fs-6c fw-lighter">
+        </div>
+    </div>
+    </div>
+
+    <!-- img -->
+        <div class="row text-white mt-5 pt-5 padding-row d-flex justify-content-center">
+          <div class="col-lg-7 col-12">
+            <img src="images/animus5.png" class="works_img">
+          </div>
+        </div>
+
+<!-- img -->
+    <div class="row text-white  mt-lg-4 mt-3 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/animus6.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
+        <img src="images/animus7.png" class="works_img">
+      </div>
+    </div>
+
+
+
+<!-- 5 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          5. Define the UI</div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+        Now we just need to define the UI: after a few iterations, we arrived at the final solution. It reflects the university's institutional identity but using a fresher and more modern aesthetic.
+
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+    After defining the UI of the app it was easy for us to define the various elements of Animus, to learn more about this part of the project watch the video above!
+        </div>
+    </div>
+    </div>
+
+<!-- 5 -->
+    <div class="row text-white mt-5 pt-4 padding-row mb-5 pb-5">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          6. Prototype it and test it!</div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+        We finally have the final result! The UI has been then prototyped in ProtoPie to make it feel as real as possible with animated interaction and functioning variables.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+          We tested it with our users and they shared with us amazing comments. They were pleased by the fresh look and the intuitiveness of it! <a class="link text-white hover_green text-decoration-underline" target="_blank" href="https://www.figma.com/proto/dTuNtFYwQPcP2utRPuM8CC/App-Architecture?page-id=483%3A9821&node-id=545%3A1080&viewport=241%2C48%2C0.24&scaling=scale-down&starting-point-node-id=742%3A11984">Try it here </a>yourself and let me know what you think!
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- other projects -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-12">
+        <div class="fs-2c mt-4" >
+        Other projects </div>
+      </div>
+    </div>
+
+    <hr class="bg-white mb-0 mt-lg-5 mt-3" style="opacity:1; height:1.5px"/>
+
+    <!-- easydream -->
+    <div class="row text-white py-4 padding-row work" id="easydream" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Easydream </div>
+        <div class="fs-6c  fw-lighter" >
+      A new way to inspire people to choose their next travel destination  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          User research -
+          UX-UI design -
+          Prototyping
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+    <!-- animus -->
+    <div class="row text-white py-4 padding-row work d-none" id="animus" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        PoliMi app redesign + Animus </div>
+        <div class="fs-6c  fw-lighter" >
+        A new smart way of managing university rooms  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          User research -
+          UI-UX design -
+          User testing -
+          Prototyping
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0 d-none" style="opacity:1; height:1.5px"/>
+
+    <!-- deposito -->
+    <div class="row text-white py-4 padding-row work" id="deposito" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Deposito Cinerario Italiano </div>
+        <div class="fs-6c  fw-lighter" >
+        Communicative machine speculating on death  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Digital interaction -
+          UI / UX -
+          Web programming -
+          Space design
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+    <!-- izi -->
+    <div class="row text-white py-4 padding-row work" id="izi" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Izi photo mosaic </div>
+        <div class="fs-6c  fw-lighter" >
+        Common digital space that invites users to collaborate  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Digital interaction -
+          UI / UX -
+          Web programming
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0 " style="opacity:1; height:1.5px"/>
+
+    <!-- music jukebox -->
+    <div class="row text-white py-4 padding-row work" id="jukebox" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Memory jukebox </div>
+        <div class="fs-6c  fw-lighter" >
+        Interactive music toy to prevent senile dementia  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Prototyping -
+          UX -
+          User research -
+          C++ programing
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+
+
+
+  </body>
+
+
+
+  </html>
