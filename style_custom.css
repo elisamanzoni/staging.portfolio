@@ -82,11 +82,12 @@ a:hover{
 
 .fs-2c{
   font-size: var(--fs-2c);
+  line-height: 1.2em;
 }
 
 .fs-3c{
   font-size: var(--fs-3c);
-  line-height: 1em;
+  line-height: 1.2em;
 }
 
 
@@ -369,8 +370,7 @@ a:hover{
   }
 
   .fs-2c{
-    font-size: calc(var(--fs-2c) + var(--mobile-difference));
-    line-height: 1.2em;
+    font-size: calc(var(--fs-2c) + 2.8vw);
   }
 
   .fs-3c{
