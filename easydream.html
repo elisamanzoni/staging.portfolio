@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link href="style_custom.css" rel="stylesheet">
+      <script src="p5.min.js"></script>
+      <script src="p5.sound.min.js"></script>
+      <script src="sketch.js"></script>
+    <title>Manzoni Elisa</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+
+  </head>
+  <body class="bg-black">
+
+    <!-- navbar -->
+    <div class="row navbar_size mx-0 pt-2 pb-2 text-white position-fixed w-100 bg-black padding-row" style="border-color:white!important; z-index:5">
+      <div class="col d-flex align-items-end">
+        <a class="ME text-white" href="index.html"></a>
+      </div>
+      <div class="col text-end fs-6c d-flex align-items-end justify-content-end ">
+        <a href="about.html" class=" mx-md-3 mx-2 hover_bg_green text-white">About</a>
+        <a href="works.html" class=" mx-md-3 mx-2 hover_bg_green  text-white">Works</a>
+        <a class=" mx-md-3 mx-2 hover_bg_green  text-white" id="contact">Contact</a>
+      </div>
+    </div>
+
+<!-- contact -->
+    <div id="contact_container" class="contact_container_sparito display_none">
+      <div class="exit" id="exit"></div>
+      <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
+      <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+      <a  class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+    </div>
+
+<!-- spazio da navbar -->
+    <div class="pt-5">
+    </div>
+
+    <div class="row text-white mt-5">
+      <div class="col-12 text-center">
+        <div class="fs-1c mt-lg-0 my-3">
+          easyDream </div>
+          <iframe class="video_works" src="https://www.youtube.com/embed/SOPcGmyXbgw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="row text-white mt-5  padding-row">
+      <div class="col-md-6 col-12 px-3">
+        <div class="fs-3c mt-4" >
+          A new way to inspire people <br> to choose their next travel destination </div>
+          <div  class="mt-2 fs-6c fw-lighter opacity">
+            Winner project of Reply Creative Challenge 2021 </div>
+      </div>
+      <div class="col-md-3 col-6 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c">
+            My main role: </div>
+          <div  class="fs-6c  mt-2 fw-lighter opacity" >
+            UI / UX  designer<br>
+            User researcher
+          </div>
+      </div>
+      <div class="col-md-3 col-6 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c">
+            My secondary role: </div>
+          <div  class="fs-6c  mt-2 fw-lighter opacity" >
+            Digital prototype creator
+          </div>
+      </div>
+    </div>
+
+<!-- intro -->
+    <div class="row text-white mt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-2c mt-4" >
+          How to inspire people <br> for their next destinations? </div>
+      </div>
+      <div class="col-lg-3 col-12 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+        Everyone at least once in their life has struggled with choosing his next travel destination, never finding a better place to go on holiday and getting very frustrated by it, so easyJet, through the Reply Creative Challenge 2021, asked us to answer to this question: How to inspire people for their next destinations?</div>
+      </div>
+      <div class="col-lg-3 col-12 px-md-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+After accepting this challenge, we conducted a research discovering that what really drives people is not a destination but the experience that a place can give them. So we asked ourselves, if people seek for emotions, what if they could find inspiration from them? From this, in just 2 days, easyDream was born.</div>
+      </div>
+    </div>
+
+    <div class="row text-white mt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/easydream.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+        <img src="images/easydream2.png" class="works_img">
+      </div>
+    </div>
+
+
+<!-- 1 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          1. Benchmarking and questionnaire </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          The preliminary research has been divided into two activities: benchmarking of existing solutions and a questionnaire shared with a good breadth of users.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+           After that we defined our personas, finding out the starting point for our concept: “People look for experiences, not destinations!”
+        </div>
+    </div>
+    </div>
+
+<!-- 2 -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          2. Define the concept </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          Our concept mainly wants to consider the kind of experience the user expects, presenting moods, activities and travel plans, instead of just sterile destinations, flights and packages.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-md-2 fs-6c fw-lighter">
+          What the user (and his friends or family) will have to do is just to like or dislike those moods from the easyDream Mobile application or website. Thanks to AI the service will find the perfect solution for the user.
+        </div>
+    </div>
+    </div>
+
+<!-- img -->
+    <div class="row text-white mt-5 pt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/easydream3.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
+        <img src="images/easydream4.png" class="works_img">
+      </div>
+    </div>
+
+<!-- 3 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          3. Prototype</div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          The main goal of easyDream is to give the possibility to each single user to easily book the destination of his dreams. For this reason we built the app architecture in such a way as to allow the user to reach their goals in a few taps.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+          Then we prototype our idea using Figma and ProtoPie.
+        </div>
+    </div>
+    </div>
+
+<!-- 4 -->
+    <div class="row text-white mt-5 pt-0 padding-row mb-5 pt-5">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          4. Presentation of the project and… win! </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          Among 170 teams around the world, easyJet chose our project to participate in the Reply Creative Challenge 2021 final, presenting our project in a <a class="link text-white hover_green text-decoration-underline" target="_blank" href="https://www.youtube.com/watch?v=TGMFqtj5s5M">live YouTube broadcast</a>, competing against 9 other teams.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-md-2 fs-6c fw-lighter">
+          The jury chose our project as the winner and we had the opportunity to meet the managers of easyJet's UX-UI department... Now we are waiting and hoping that the company will implement easyDream!
+            <br>Find out more about the project and <a class="link text-white hover_green text-decoration-underline" target="_blank" href="https://watermelon-team.github.io/easydream/">try the prototype here!</a>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- other projects -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-12">
+        <div class="fs-2c mt-4" >
+        Other projects </div>
+      </div>
+    </div>
+
+    <hr class="bg-white mb-0 mt-lg-5 mt-3" style="opacity:1; height:1.5px"/>
+
+    <!-- easydream -->
+    <div class="row text-white py-4 padding-row work d-none" id="easydream" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Easydream </div>
+        <div class="fs-6c  fw-lighter" >
+      A new way to inspire people to choose their next travel destination  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          User research -
+          UX-UI design -
+          Prototyping
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0 d-none" style="opacity:1; height:1.5px"/>
+
+    <!-- animus -->
+    <div class="row text-white py-4 padding-row work" id="animus" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        PoliMi app redesign + Animus </div>
+        <div class="fs-6c  fw-lighter" >
+        A new smart way of managing university rooms  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          User research -
+          UI-UX design -
+          User testing -
+          Prototyping
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+    <!-- deposito -->
+    <div class="row text-white py-4 padding-row work" id="deposito" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Deposito Cinerario Italiano </div>
+        <div class="fs-6c  fw-lighter" >
+        Communicative machine speculating on death  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Digital interaction -
+          UI / UX -
+          Web programming -
+          Space design
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+    <!-- izi -->
+    <div class="row text-white py-4 padding-row work" id="izi" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Izi photo mosaic </div>
+        <div class="fs-6c  fw-lighter" >
+        Common digital space that invites users to collaborate  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Digital interaction -
+          UI / UX -
+          Web programming
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0 " style="opacity:1; height:1.5px"/>
+
+    <!-- music jukebox -->
+    <div class="row text-white py-4 padding-row work" id="jukebox" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Memory jukebox </div>
+        <div class="fs-6c  fw-lighter" >
+        Interactive music toy to prevent senile dementia  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Prototyping -
+          UX -
+          User research -
+          C++ programing
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+
+
+
+  </body>
+
+
+
+  </html>
