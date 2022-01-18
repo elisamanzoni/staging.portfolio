@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <link href="style_custom.css" rel="stylesheet">
+      <script src="p5.min.js"></script>
+      <script src="p5.sound.min.js"></script>
+      <script src="sketch.js"></script>
+    <title>Manzoni Elisa</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+
+  </head>
+  <body class="bg-black">
+
+    <!-- navbar -->
+    <div class="row navbar_size mx-0 pt-2 pb-2 text-white position-fixed w-100 bg-black padding-row" style="border-color:white!important; z-index:5">
+      <div class="col d-flex align-items-end">
+        <a class="ME text-white" href="index.html"></a>
+      </div>
+      <div class="col text-end fs-6c d-flex align-items-end justify-content-end ">
+        <a href="about.html" class=" mx-md-3 mx-2 hover_bg_green text-white">About</a>
+        <a href="works.html" class=" mx-md-3 mx-2 hover_bg_green  text-white">Works</a>
+        <a class=" mx-md-3 mx-2 hover_bg_green  text-white" id="contact">Contact</a>
+      </div>
+    </div>
+
+<!-- contact -->
+    <div id="contact_container" class="contact_container_sparito display_none">
+      <div class="exit" id="exit"></div>
+      <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
+      <a  class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+      <a  class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+    </div>
+
+<!-- spazio da navbar -->
+    <div class="pt-5">
+    </div>
+
+    <div class="row text-white mt-5">
+      <div class="col-12 text-center">
+        <div class="fs-1c mt-lg-0 my-3">
+          Memory jukebox </div>
+          <iframe class="video_works" src="https://www.youtube.com/embed/kZ2dDjWYxrw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="row text-white mt-5  padding-row">
+      <div class="col-md-6 col-12 px-3">
+        <div class="fs-3c mt-4" >
+          Interactive music toy <br> to prevent senile dementia </div>
+      </div>
+      <div class="col-md-3 col-6 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c">
+            My main role: </div>
+          <div  class="fs-6c  mt-2 fw-lighter opacity" >
+            C++ programmer<br>
+            Low-fidelity prototype creator<br>
+            Interaction designer<br>
+          </div>
+      </div>
+      <div class="col-md-3 col-6 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c">
+            My secondary role: </div>
+          <div  class="fs-6c  mt-2 fw-lighter opacity" >
+            User researcher<br>
+            Visual designer
+          </div>
+      </div>
+    </div>
+
+<!-- intro -->
+    <div class="row text-white mt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-2c mt-4" >
+          How to improve elderly's memory <br>in a fun way?</div>
+      </div>
+      <div class="col-lg-3 col-12 px-md-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+          Brain activity gets worse the older we become, causing memory and decision making problems: this is especially true if an elderly person has to deal with Alzheimer’s disease as well.
+        This knowledge was a trigger to our design work as we wants to slow down this process.  <br>
+        Most games designed for seniors use music as therapy.
+        </div>
+      </div>
+      <div class="col-lg-3 col-12 px-md-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+          The memory of the elderly is trained when they listen to songs from their youth.
+          Thus was born Memory Jukebox: a game that recalls a mix between a classic radio and a juke box.
+          When each piece is swiped through the apposite space, part of an old song is activated: the goal is to swipe all the pieces in the right order, in order to activate the full song.
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-white mt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/jukebox4a.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12 mt-3 mt-lg-0">
+        <img src="images/jukebox3a.png" class="works_img">
+      </div>
+    </div>
+
+
+<!-- 1 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          1. User research and definition of the concept </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+        We did a research to find out which techniques are used to prevent demeza senile. We have found that many senior centers use karaoke and music therapy.
+        No matter the age or the disease, it is always good to practice your brain and work on mental condition.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+          Having this in mind the idea of Memory Jukebox was born.
+          After deep research about illnesses among elderly people we created our persona to have a sense of knowledge who will be a user of our game.
+        </div>
+    </div>
+    </div>
+
+<!-- 2 -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          2. Define the user interaction </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+        The goal was to create an entertaining game, which is easy to understand and use for people with different stages of an illness.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-md-2 fs-6c fw-lighter">
+           We thought of creating easy-to-handle cubes, a few easy-to-press buttons and lights that make interaction more intuitive.
+        </div>
+    </div>
+    </div>
+
+<!-- img -->
+    <div class="row text-white mt-5 pt-5 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/jukebox3.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
+        <img src="images/jukebox4.png" class="works_img">
+      </div>
+    </div>
+
+<!-- 3 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          3. Define and test the technologies</div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+        To create the game we decided to use an Arduino Uno, a DFPlayer to play the music and an RFID reader to read the cubes connected to the RFID tags.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+          To make the interaction clearer we used a rgb led strip.
+          After several tests we arrived at the working prototype.
+        </div>
+    </div>
+    </div>
+
+<!-- 4 -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          4. Improve user experience through an app </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+      To make the experience more interesting we designed an App. This App is an upgrade to the toy: not necessary to play but it unlocks many features such as inviting friends or personal selection of songs. In case the user doesn’t want it, random/system songs will be played.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-md-2 fs-6c fw-lighter">
+          App is designed for elderly people, which will be users of the toy. Having this in mind we had to follow strict rules related to designing for people with some disabilities and who might not be used to approach apps and technology.
+        </div>
+    </div>
+    </div>
+
+
+<!-- img -->
+    <div class="row text-white mt-5 pt-5  padding-row">
+      <div class="col-lg-9 col-12">
+        <img src="images/jukebox.png" class="works_img">
+      </div>
+    </div>
+
+<!-- img -->
+    <div class="row text-white  mt-lg-4 mt-3 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/jukebox5.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
+        <img src="images/jukebox6.png" class="works_img">
+      </div>
+    </div>
+
+
+
+<!-- 5 -->
+    <div class="row text-white mt-5 pt-4 padding-row">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          5.  Design the high-fidelity prototype</div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+       The goal was to make a game that is easily portable and simple to use. Taking inspiration from the "game of 15" and from the old stereos, we thought of making a cube of 20cm.
+      </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+          On the top there will be the space where the user will swipe the pieces.
+        </div>
+    </div>
+    </div>
+
+<!-- 6 -->
+    <div class="row text-white mt-5 pt-4 padding-row mb-5 pb-5">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c mt-4" >
+          6.  Realize and test the final prototype</div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-4 pt-2 fs-6c fw-lighter">
+       We finally developed the final prototype and we tested it to a little group of people, it is a bit diffucult for elderly so the next step will be to insert some checkpoints and more feedbaks to help the elderly!
+     </div>
+      </div>
+      <div class="col-lg-3 col-12 px-lg-3">
+        <div  class="mt-lg-4 pt-lg-2 fs-6c fw-lighter">
+        </div>
+    </div>
+    </div>
+
+<!-- img -->
+    <div class="row text-white mt-5 pt-5  padding-row d-flex justify-content-center">
+      <div class="col-lg-9 col-12">
+        <img src="images/jukebox2a.png" class="works_img">
+      </div>
+    </div>
+
+<!-- img -->
+    <div class="row text-white  mt-lg-4 mt-3 padding-row">
+      <div class="col-lg-6 col-12">
+        <img src="images/jukebox8.png" class="works_img">
+      </div>
+      <div class="col-lg-6 col-12  mt-3 mt-lg-0">
+        <img src="images/jukebox9.png" class="works_img">
+      </div>
+    </div>
+
+
+    <!-- other projects -->
+    <div class="row text-white mt-5 pt-0 padding-row">
+      <div class="col-12">
+        <div class="fs-2c mt-4" >
+        Other projects </div>
+      </div>
+    </div>
+
+    <hr class="bg-white mb-0 mt-lg-5 mt-3" style="opacity:1; height:1.5px"/>
+
+    <!-- deposito -->
+    <div class="row text-white py-4 padding-row work" id="deposito" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Deposito Cinerario Italiano </div>
+        <div class="fs-6c  fw-lighter" >
+        Communicative machine speculating on death  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Digital interaction -
+          UI / UX -
+          Web programming -
+          Space design
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0" style="opacity:1; height:1.5px"/>
+
+    <!-- izi -->
+    <div class="row text-white py-4 padding-row work" id="izi" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Izi photo mosaic </div>
+        <div class="fs-6c  fw-lighter" >
+        Common digital space that invites users to collaborate  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Digital interaction -
+          UI / UX -
+          Web programming
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0 " style="opacity:1; height:1.5px"/>
+
+    <!-- music jukebox -->
+    <div class="row text-white py-4 padding-row work d-none" id="jukebox" onclick="changePage(this)">
+      <div class="col-lg-6 col-12">
+        <div class="fs-3c" >
+        Memory jukebox </div>
+        <div class="fs-6c  fw-lighter" >
+        Interactive music toy to prevent senile dementia  </div>
+      </div>
+      <div class="col-lg-6 col-12 d-flex align-items-center">
+        <div class="fs-6c opacity fw-lighter mt-lg-0 mt-2" >
+          Prototyping -
+          UX -
+          User research -
+          C++ programing
+      </div>
+    </div>
+    </div>
+
+    <hr class="bg-white my-0 d-none" style="opacity:1; height:1.5px"/>
+
+
+
+
+  </body>
+
+
+
+  </html>
