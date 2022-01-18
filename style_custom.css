@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+  font-family: 'Rubik', sans-serif;
+  padding:0px;
+  margin:0px;
+  font-size: 200;
+
+  overflow-x:hidden;
+
+user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+:root {
+  --main-color: rgb(0, 255, 0);
+  --tablet-difference: 1.1vw;
+  --mobile-difference: 2.4;
+  --fs-1c: 3vw;
+  --fs-2c: 2vw;
+  --fs-3c: 1.4vw;
+  --fs-6c: 1.2vw;
+  --fs-7c: 1vw;
+  --navbar-size: 1.4vw;
+}
+
+.display_none{
+  display:none;
+}
+
+a{
+  text-decoration: none!important;
+  color:black;
+  transition: 0.5s;
+}
+
+a:hover{
+  color:black;
+  transition: 0.5s
+}
+
+.hover_green{
+  transition: 0.3s;
+  cursor:pointer;
+}
+
+.hover_green:hover{
+  color:var(--main-color)!important;
+  transition: 0.3s;
+}
+
+.hover_bg_green{
+  transition: 0.3s;
+  background-color: none;
+  cursor:pointer;
+}
+
+.hover_bg_green:hover{
+  transition: 0.3s;
+  color:black!important;
+  background-color: var(--main-color);
+}
+
+.bg_main{
+  background-color: var(--main-color);
+}
+
+.bg-black{
+  background-color: black;
+}
+
+/* FONT SIZE */
+
+.fs-1c{
+  font-size:  var(--fs-1c);
+  line-height: 1.2em;
+}
+
+.fs-2c{
+  font-size: var(--fs-2c);
+}
+
+.fs-3c{
+  font-size: var(--fs-3c);
+  line-height: 1em;
+}
+
+
+.fs-6c{
+  font-size: var(--fs-6c);
+  line-height: 1.3em;
+}
+
+.fs-7c{
+  font-size: var(--fs-7c);
+}
+
+
+.navbar_size{
+  font-size: var(--navbar-size);
+  border-bottom: 2px solid black;
+}
+
+.text-main{
+  color: var(--main-color);
+}
+
+.opacity{
+  opacity:0.7;
+}
+
+/* contact */
+
+@keyframes container_open {
+  from{
+    top: 30px;
+    left: 90vw;
+    padding: 0px;
+    opacity: 0;
+    transition: 1s;
+    font-size: 0px;
+    height: 0px;
+    text-align: center;
+  }
+  to{
+    top: 50vh;
+    left: 50vw;
+    padding: 40px 15px 20px 15px;
+    opacity: 1;
+    font-size: 20px;
+    height: 150px;
+    text-align: center;
+  }
+}
+
+@keyframes container_close {
+  from{
+    top: 50vh;
+    left: 50vw;
+    padding: 40px 15px 20px 15px;
+    opacity: 1;
+    font-size: 20px;
+    height: 150px;
+    text-align: center;
+  }
+  to{
+    top: 30px;
+    left: 90vw;
+    padding: 0px;
+    opacity: 0;
+    transition: 1s;
+    font-size: 0px;
+    height: 0px;
+    text-align: center;
+  }
+}
+
+.contact_container{
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 255, 0);
+  top: 50vh;
+  left: 50vw;
+  z-index: 3;
+  font-size: 20px;
+  padding: 40px 20px 20px 20px;
+  line-height: 30px;
+  text-align: center;
+  opacity: 1;
+  height: 150px;
+  animation: container_open 0.5s;
+  /* border: 2px solid black; */
+}
+
+.contact_container_sparito{
+  z-index: 3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 255, 0);
+  top: 30px;
+  right: 200px;
+  padding: 0px;
+  opacity: 0;
+  font-size: 0px;
+  height: 0px;
+  animation: container_close 0.5s;
+}
+
+.green_background{
+  background-color: rgb(0, 255, 0);
+}
+
+.exit{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%,0) rotate(180deg);
+  left: 50%;
+  top: 10px;
+  background-image: url("images/x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  cursor: pointer;
+  /* background-color: rgb(0, 255, 0);
+  border: 2px solid black; */
+}
+
+.exit:hover{
+  background-image: url("images/x_white.png");
+  transition: 0.2s;
+}
+
+
+.contact_popup:hover{
+  color: white;
+  transition: 0.2s;
+}
+
+.contact_popup{
+  text-decoration: underline;
+}
+
+
+
+.ME:before{
+  cursor:pointer;
+  content: "ME";
+  transition: 0.5s;
+}
+
+.ME:hover:before{
+  content: "Manzoni Elisa";
+  transition: 0.5s;
+  background-color: var(--main-color);
+  color:black!important;
+}
+
+.ME_intro:before{
+  cursor:pointer;
+  text-decoration: underline;
+  content: "ME";
+  transition: 0.5s;
+}
+
+.ME_intro:hover:after{
+  color: var(--main-color);
+  content: " (Manzoni Elisa)";
+  transition: 0.5s;
+}
+
+@keyframes arrow_right1 {
+  0%{ margin-left: 10px}
+  6.25% {margin-left: 20px}
+  12.5% {margin-left: 10px}
+  18.75% {margin-left: 20px}
+  25% {margin-left: 10px}
+  100% {margin-left: 10px}
+}
+
+@keyframes arrow_right2 {
+  0%{ margin-left: 10px}
+  40%{ margin-left: 10px}
+  46.25% {margin-left: 20px}
+  52.5% {margin-left: 10px}
+  58.75% {margin-left: 20px}
+  65% {margin-left: 10px}
+  100% {margin-left: 10px}
+}
+
+.arrow_right{
+  display: inline-block;
+  height: calc(var(--fs-1c) - 10px);
+  transform: translate(0%, 10%);
+}
+
+.arrow_right1{
+    animation: arrow_right1 3s infinite linear;
+}
+
+.arrow_right2{
+    animation: arrow_right2 3s infinite linear;
+}
+
+.works_img{
+  width:100%;
+}
+
+.work{
+  transition: 0.5s;
+}
+
+.work:hover{
+  background-color: white;
+  color: black!important;
+  transition: 0.5s;
+  cursor:pointer;
+}
+
+.video_works{
+  width: 80vw;
+  height: calc(80vw * 9 / 16);
+}
+
+.padding-row{
+  padding: 0px 100px;
+}
+
+/* TABLET ------------------------------------------------- */
+
+@media (max-width: 1000px) {
+
+  /* FONT SIZE */
+    .fs-1c{
+      font-size:  calc(var(--fs-1c) + var(--tablet-difference));
+      line-height: 1.2em;
+    }
+
+    .fs-2c{
+      font-size:  calc(var(--fs-2c) + var(--tablet-difference));
+      line-height: 1.2em;
+    }
+
+    .fs-3c{
+      font-size:  calc(var(--fs-3c) + var(--tablet-difference));
+      line-height: 1.2em;
+    }
+
+    .fs-6c{
+      font-size: calc(var(--fs-6c) + var(--tablet-difference));
+    }
+
+    .fs-7c{
+      font-size: calc(var(--fs-7c) + var(--tablet-difference));
+    }
+
+    .navbar_size{
+      font-size: calc(var(--navbar-size) + var(--tablet-difference));
+      border-bottom: 2px solid black;
+    }
+
+    .arrow_right{
+    height:25px;
+    transform: translate(0%, 10%);
+  }
+
+  .work:hover{
+    background-color: black;
+    color: white!important;
+  }
+
+
+}
+
+
+/* MOBILE ------------------------------------------------- */
+@media (max-width: 576px) {
+
+/* FONT SIZE */
+  .fs-1c{
+    font-size: calc(var(--fs-1c) * var(--mobile-difference));
+    line-height: 1.2em;
+  }
+
+  .fs-2c{
+    font-size: calc(var(--fs-2c) + var(--mobile-difference));
+    line-height: 1.2em;
+  }
+
+  .fs-3c{
+    font-size: calc(var(--fs-3c) + var(--mobile-difference));
+    line-height: 1.2em;
+  }
+
+  .fs-6c{
+    font-size: calc(var(--fs-6c) + var(--mobile-difference));
+  }
+
+  .fs-7c{
+    font-size: calc(var(--fs-7c) + var(--mobile-difference));
+  }
+
+  .navbar_size{
+    font-size:calc(var(--navbar-size) + var(--mobile-difference));
+    border-bottom: 2px solid black;
+  }
+
+  .arrow_right{
+  height:20px;
+  transform: translate(0%, 10%);
+}
+
+.padding-row{
+  padding: 0px 20px;
+}
+
+
+}
