@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="style_custom.css" rel="stylesheet">
+  <script src="p5.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  <script src="sketch.js"></script>
+  <title>Manzoni Elisa</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <meta name="keywords" content="Elisa Manzoni, portfolio" title="Manzoni Elisa">
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="row navbar_size mx-0 pt-2 pb-2  padding-row position-fixed bg-white w-100" style="z-index:5">
+    <div class="col d-flex align-items-end ">
+      <a class="ME" href="index.html"></a>
+    </div>
+    <div class="col text-end fs-6c d-flex align-items-end justify-content-end ">
+      <a href="about.html" class=" mx-md-3 mx-2 hover_bg_green">About</a>
+      <a href="works.html" class=" mx-md-3 mx-2 hover_bg_green">Works</a>
+      <a class=" mx-md-3 mx-2 hover_bg_green" id="contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="contact_container" class="contact_container_sparito display_none">
+    <div class="exit" id="exit"></div>
+    <a class="contact_popup" href="mailto:elisamanzoni98@gmail.com">elisamanzoni98@gmail.com</a><br>
+    <a class="contact_popup" href="tel:+393486581621">3486581621</a><br>
+    <a class="contact_popup" target="_blank" href="https://www.linkedin.com/in/elisa-manzoni-45919519b/">linkedin/elisamanzoni</a>
+  </div>
+
+  <!-- spazio da navbar -->
+  <div class="pt-5">
+  </div>
+
+  <div class="row mt-lg-4 mt-2   padding-row">
+    <div class="col-xl-4 col-lg-6 col-12 mt-lg-5 mt-4  pe-lg-5">
+      <div class="img_about" id="img_about">
+      </div>
+    </div>
+    <div class="col col-lg-6 col-12 mt-lg-5 mt-4 ps-lg-3">
+      <div class="fs-2c" style="line-height:1.3em">
+        Hi! I’m Elisa, a young interaction designer from Politecnico di Milano. I am a lover of <a class="pokemon"></a>, <a class="arrighetti"></a> and <a class="alvar"></a>. <br>
+        My dream in life is to create applications that my mother can use without panicking or asking for my help.
+      </div>
+      <div class="fs-3c mt-lg-5 mt-3" style="line-height:1.3em">
+        I live in a small city near Milan, I play volleyball and I love trekking. <br>
+        I prefer functionality over aesthetics. In my opinion, good communication is effective when it is understood immediately without too many words, but I also love to experiment and amaze people.
+      </div>
+    </div>
+  </div>
+
+
+  <hr class="bg-black mb-0 mt-lg-5 mt-3" style="opacity:1; height:1.5px" />
+
+  <!-- experience -->
+  <div class="row py-4 padding-row ">
+    <div class="col-xl-4 col-lg-6 col-12">
+      <div class="fs-2c">
+        Experience </div>
+    </div>
+    <div class="col col-lg-6 col-12 ps-lg-3">
+      <div class="row mt-2">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2020 /<br>
+            now
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Denani s.r.l.
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            <ul>
+              <li> UX/UI design of web platform</li>
+              <li> Front-end developer</li>
+              <li> Creation of brand identity </li>
+              <li> Social media management </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2017 / <br>
+            2020
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Fereelancer designer
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            <ul>
+              <li> Creation of brand identity for small organisations and events</li>
+              <li> Creations of logo, flyers and layout websites on the international platform "99 design"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="bg-black my-0" style="opacity:1; height:1.5px" />
+
+  <!-- awards -->
+  <div class="row py-4 padding-row ">
+    <div class="col-xl-4 col-lg-6 col-12">
+      <div class="fs-2c">
+        Awards </div>
+    </div>
+    <div class="col col-lg-6 col-12 ps-lg-3">
+      <div class="row mt-2">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2021
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Reply Creative Challenge
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            Design of easyDream, the winner project for the digital customer experience powered by easyJet. <a class="hover_green text-decoration-underline" href="easydream.html">Have a look at the project! </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2020
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Workshop "Prototyping with Big Data"
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            Creation of innovative solution for the company JMCGroup thanks to the use of Big and Thick Data.
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2018
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Launch of the new album of the singer Marco Mengoni
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            Collaboration with the Politecnico of Milan for the launch of Marco Mengoni’s “Atlantico” album.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <hr class="bg-black my-0" style="opacity:1; height:1.5px" />
+
+  <!-- education -->
+  <div class="row py-4 padding-row ">
+    <div class="col-xl-4 col-lg-6 col-12">
+      <div class="fs-2c">
+        Education </div>
+    </div>
+    <div class="col col-lg-6 col-12 ps-lg-3">
+      <div class="row mt-2">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2020/ <br>
+            now
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Digital and interaction Design
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            Politecnico di Milano</div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2020
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Communication Design degree
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            Politecnico di Milano <br>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-2 col-3">
+          <div class="fs-6c ">
+            2017
+          </div>
+        </div>
+        <div class="col">
+          <div class="fs-6c">
+            Artistic diploma
+          </div>
+          <div class="fs-7c fw-light opacity mt-1">
+            Artistic High School, Bergamo <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="bg-black my-0" style="opacity:1; height:1.5px" />
+
+
+</body>
+
+
+
+</html>
