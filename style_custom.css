@@ -98,6 +98,7 @@ a:hover{
 
 .fs-7c{
   font-size: var(--fs-7c);
+  line-height: 1.2em
 }
 
 
@@ -112,6 +113,10 @@ a:hover{
 
 .opacity{
   opacity:0.7;
+}
+
+.important{
+  opacity: 1!important;
 }
 
 /* contact */
@@ -254,6 +259,45 @@ a:hover{
   transition: 0.5s;
 }
 
+.pokemon:before{
+  cursor:pointer;
+  text-decoration: underline;
+  content: "Pokemon";
+  transition: 0.5s;
+}
+
+.pokemon:hover:after{
+  color: var(--main-color);
+  content: " (my favourite one is Charmander)";
+  transition: 0.5s;
+}
+
+.arrighetti:before{
+  cursor:pointer;
+  text-decoration: underline;
+  content: "Valentina Arrighetti";
+  transition: 0.5s;
+}
+
+.arrighetti:hover:after{
+  color: var(--main-color);
+  content: " (an Italian volleball player)";
+  transition: 0.5s;
+}
+
+.alvar:before{
+  cursor:pointer;
+  text-decoration: underline;
+  content: "Alvar Aalto";
+  transition: 0.5s;
+}
+
+.alvar:hover:after{
+  color: var(--main-color);
+  content: " (a Finnish designer)";
+  transition: 0.5s;
+}
+
 @keyframes arrow_right1 {
   0%{ margin-left: 10px}
   6.25% {margin-left: 20px}
@@ -311,6 +355,31 @@ a:hover{
   padding: 0px 100px;
 }
 
+.img_about{
+  background-image: url('images/elisa1.png');
+  background-position: center center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.img_about:hover {
+  background-image: url('images/elisa2.png');
+  transition: 0.3s;
+}
+
+.experience{
+  transition: 0.3s;
+}
+
+.experience:hover{
+  background-color: black!important;
+  color: white!important;
+  transition: 0.3s;
+}
+
+
 
 
 /* TABLET ------------------------------------------------- */
@@ -355,6 +424,17 @@ a:hover{
     background-color: black;
     color: white!important;
   }
+
+  .experience:hover{
+    background-color: white;
+    color: black!important;
+  }
+
+  .img_about:hover {
+    background-image: url('images/elisa1.png');
+  }
+
+
 
 
 }
@@ -411,6 +491,12 @@ a:hover{
   background-color: none;
   color:black!important;
 }
+
+.img_about{
+  height: 40vh;
+}
+
+
 
 
 }
